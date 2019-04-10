@@ -1,0 +1,122 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://sprites/Tiles_1.png" type="Texture" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 8, 8 )
+
+[node name="Node" type="Node"]
+
+[node name="Tiles_1" type="Sprite" parent="." index="0"]
+
+position = Vector2( 401.721, 221.107 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 16, 16 )
+_sections_unfolded = [ "Region" ]
+
+[node name="Tiles_2" type="Sprite" parent="." index="1"]
+
+position = Vector2( 425.289, 220.908 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 16, 0, 16, 16 )
+_sections_unfolded = [ "Region" ]
+
+[node name="Tiles_3" type="Sprite" parent="." index="2"]
+
+position = Vector2( 443.884, 221.008 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 32, 0, 16, 16 )
+_sections_unfolded = [ "Region" ]
+
+[node name="Tiles_4" type="Sprite" parent="." index="3"]
+
+position = Vector2( 461.286, 220.411 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 48, 0, 16, 16 )
+_sections_unfolded = [ "Region" ]
+
+[node name="Tiles_5" type="Sprite" parent="." index="4"]
+
+position = Vector2( 478.29, 220.411 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 64, 0, 16, 16 )
+_sections_unfolded = [ "Region" ]
+
+[node name="Tiles_6" type="Sprite" parent="." index="5"]
+
+position = Vector2( 495.991, 220.511 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 80, 0, 16, 16 )
+_sections_unfolded = [ "Region" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Tiles_6" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tiles_6/StaticBody2D" index="0"]
+
+shape = SubResource( 1 )
+
+[node name="Tiles_7" type="Sprite" parent="." index="6"]
+
+position = Vector2( 401.423, 238.012 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 16, 16, 16 )
+_sections_unfolded = [ "Region" ]
+
+[node name="Tiles_8" type="Sprite" parent="." index="7"]
+
+position = Vector2( 424.593, 238.31 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 16, 16, 16, 16 )
+_sections_unfolded = [ "Region" ]
+
+[node name="Tiles_9" type="Sprite" parent="." index="8"]
+
+position = Vector2( 443.983, 238.112 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 32, 16, 16, 16 )
+_sections_unfolded = [ "Region" ]
+
+[node name="Tiles_10" type="Sprite" parent="." index="9"]
+
+position = Vector2( 461.187, 237.614 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 48, 16, 16, 16 )
+_sections_unfolded = [ "Region" ]
+
+[node name="Tiles_11" type="Sprite" parent="." index="10"]
+
+position = Vector2( 478.29, 237.614 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 64, 16, 16, 16 )
+_sections_unfolded = [ "Region" ]
+
+[node name="Tiles_12" type="Sprite" parent="." index="11"]
+
+position = Vector2( 496.19, 237.515 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 80, 16, 16, 16 )
+_sections_unfolded = [ "Region" ]
+
+
